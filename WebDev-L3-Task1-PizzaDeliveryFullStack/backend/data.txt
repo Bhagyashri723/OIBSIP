@@ -1,0 +1,16 @@
+PizzaHub Admin Account details
+
+Email: admin@pizzahub.com
+Password: Admin@12345
+Role: admin
+
+
+
+run  cmd
+cd backend
+npm start
+
+cd frontend
+npm run dev
+path of my project
+http://localhost:5173/
