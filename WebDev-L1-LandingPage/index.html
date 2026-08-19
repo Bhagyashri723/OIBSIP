@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurora — a polished responsive HTML and CSS landing page.">
+  <title>Aurora — Build Better, Move Faster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Aurora home">
+        <span class="brand-mark">A</span>
+        <span>Aurora</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <a class="nav-cta" href="#get-started">Get Started <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> The smarter way to create</div>
+          <h1>Turn bold ideas into <span>beautiful results.</span></h1>
+          <p class="hero-text">
+            Aurora brings your ideas, workflow, and momentum together in one elegant workspace built for people who want to move faster.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#get-started">Start building <span>→</span></a>
+            <a class="button button-secondary" href="#features">Explore features</a>
+          </div>
+          <div class="trust-row">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>AM</span><span>RK</span><span>PS</span><span>+</span>
+            </div>
+            <div><strong>2,000+</strong><small>creators already building</small></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Aurora dashboard preview">
+          <div class="dashboard-card">
+            <div class="dash-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span class="mini-label">Overview</span>
+              <span class="live-dot">● Live</span>
+            </div>
+            <div class="dash-body">
+              <div class="dash-heading">
+                <div>
+                  <span class="muted">Good morning, creator</span>
+                  <h3>Your momentum is growing.</h3>
+                </div>
+                <div class="score">+28.4%</div>
+              </div>
+              <div class="chart">
+                <div class="chart-grid"><i></i><i></i><i></i><i></i></div>
+                <svg viewBox="0 0 520 180" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".30"/>
+                      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 150 C50 142 72 125 105 132 S160 150 195 108 S250 122 280 90 S330 80 355 100 S410 50 440 64 S480 40 520 18 V180 H0 Z" fill="url(#area)"/>
+                  <path d="M0 150 C50 142 72 125 105 132 S160 150 195 108 S250 122 280 90 S330 80 355 100 S410 50 440 64 S480 40 520 18" fill="none" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="metric-row">
+                <div><span>Projects</span><strong>24</strong><small>↑ 12%</small></div>
+                <div><span>Completed</span><strong>18</strong><small>↑ 24%</small></div>
+                <div><span>Focus time</span><strong>42h</strong><small>↑ 8%</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card">
+            <span class="check">✓</span>
+            <div><strong>Great progress!</strong><small>3 milestones completed</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos">
+      <div class="container logo-row">
+        <span>TRUSTED BY MODERN TEAMS</span>
+        <div class="logo-list"><b>northstar</b><b>vertex</b><b>MONO</b><b>luma</b><b>orbit</b></div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">WHY AURORA</div>
+          <h2>Everything you need to keep <span>moving forward.</span></h2>
+          <p>Simple tools, thoughtful details, and a workspace that gets out of your way.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card featured">
+            <div class="icon purple">✦</div>
+            <h3>Clarity by design</h3>
+            <p>See what matters at a glance. Organize projects, priorities, and progress without the clutter.</p>
+            <a href="#get-started">Learn more →</a>
+            <div class="mini-window">
+              <span>Project health</span><strong>94%</strong><div><i></i></div>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="icon blue">↯</div>
+            <h3>Flow that feels natural</h3>
+            <p>Move from thought to action with an interface designed around your actual workflow.</p>
+            <div class="feature-stat">01 <span>Capture</span><b>→</b></div>
+            <div class="feature-stat">02 <span>Focus</span><b>→</b></div>
+            <div class="feature-stat">03 <span>Ship</span><b>→</b></div>
+          </article>
+          <article class="feature-card">
+            <div class="icon green">◌</div>
+            <h3>Built for momentum</h3>
+            <p>Stay consistent with gentle insights that help you understand your work and improve over time.</p>
+            <div class="ring"><span>82</span><small>focus score</small></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="quote-mark">“</div>
+          <p>Great work doesn't need more noise. It needs more space to happen.</p>
+          <div class="signature">— Aurora team</div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">MADE WITH INTENTION</div>
+          <h2>A calmer workspace for ambitious people.</h2>
+          <p>We believe productivity should feel less like managing a machine and more like creating something you're proud of.</p>
+          <div class="check-list">
+            <div><span>✓</span><p><strong>Less busywork</strong><br>Spend more time on the work that matters.</p></div>
+            <div><span>✓</span><p><strong>More momentum</strong><br>Build habits that compound into meaningful progress.</p></div>
+            <div><span>✓</span><p><strong>Human by default</strong><br>Thoughtful design that keeps your focus where it belongs.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-heading compact">
+          <div class="eyebrow">PEOPLE LOVE IT</div>
+          <h2>Made for the way you <span>actually work.</span></h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card"><div class="stars">★★★★★</div><p>“Aurora made my workflow feel lighter almost immediately. I finally know what deserves my attention.”</p><div class="person"><span>NS</span><div><strong>Nisha Shah</strong><small>Product Designer</small></div></div></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>“It looks beautiful, but the best part is how quietly it keeps me moving. No unnecessary complexity.”</p><div class="person"><span>AD</span><div><strong>Arjun Desai</strong><small>Indie Founder</small></div></div></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>“The kind of product you open on Monday and wonder how you worked without it before.”</p><div class="person"><span>MP</span><div><strong>Maya Patel</strong><small>Creative Lead</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="get-started">
+      <div class="container cta-box">
+        <div><div class="eyebrow">READY WHEN YOU ARE</div><h2>Make your next idea <span>your best one.</span></h2><p>Start building a calmer, clearer workflow today.</p></div>
+        <a class="button button-light" href="mailto:hello@aurora.example">Get started free <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a class="brand" href="#home"><span class="brand-mark">A</span><span>Aurora</span></a><p>Make space for better work.</p></div>
+      <div class="footer-links"><div><strong>Explore</strong><a href="#features">Features</a><a href="#about">About</a><a href="#reviews">Reviews</a></div><div><strong>Connect</strong><a href="mailto:hello@aurora.example">Email</a><a href="#get-started">LinkedIn</a><a href="#get-started">Instagram</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Aurora. All rights reserved.</span><span>Built with HTML & CSS</span></div>
+  </footer>
+</body>
+</html>
