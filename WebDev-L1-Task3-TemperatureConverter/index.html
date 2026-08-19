@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A professional vanilla JavaScript temperature converter.">
+  <title>Tempora — Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav">
+      <a class="brand" href="#">
+        <span class="brand-icon">°</span>
+        <span>Tempora</span>
+      </a>
+      <span class="status"><i></i> Live converter</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="converter-section">
+      <div class="container">
+        <div class="intro">
+          <span class="eyebrow">TEMPERATURE TOOL</span>
+          <h1>Convert temperature <span>without the guesswork.</span></h1>
+          <p>Enter a value, choose its unit, and instantly see the equivalent temperature in Celsius, Fahrenheit, and Kelvin.</p>
+        </div>
+
+        <div class="converter-card">
+          <div class="card-head">
+            <div>
+              <span class="small-label">CONVERTER</span>
+              <h2>Enter your temperature</h2>
+            </div>
+            <div class="thermometer">♨</div>
+          </div>
+
+          <form id="converterForm" novalidate>
+            <div class="input-grid">
+              <div class="field value-field">
+                <label for="temperature">Temperature value</label>
+                <input id="temperature" type="text" inputmode="decimal" autocomplete="off" placeholder="e.g. 25">
+              </div>
+
+              <div class="field">
+                <label for="unit">Input unit</label>
+                <select id="unit">
+                  <option value="celsius">Celsius (°C)</option>
+                  <option value="fahrenheit">Fahrenheit (°F)</option>
+                  <option value="kelvin">Kelvin (K)</option>
+                </select>
+              </div>
+            </div>
+
+            <p id="errorMessage" class="error-message" role="alert"></p>
+
+            <div class="actions">
+              <button class="convert-btn" type="submit">Convert temperature <span>→</span></button>
+              <button class="reset-btn" type="button" id="resetBtn">Reset</button>
+            </div>
+          </form>
+
+          <div class="divider"></div>
+
+          <div class="result-heading">
+            <div>
+              <span class="small-label">RESULTS</span>
+              <h2>All units, at a glance</h2>
+            </div>
+            <span id="resultState" class="result-state">Waiting for input</span>
+          </div>
+
+          <div class="results">
+            <article class="result-card celsius">
+              <div class="result-top"><span class="unit-symbol">°C</span><span>Celsius</span></div>
+              <strong id="celsiusResult">—</strong>
+              <small>Celsius</small>
+            </article>
+            <article class="result-card fahrenheit">
+              <div class="result-top"><span class="unit-symbol">°F</span><span>Fahrenheit</span></div>
+              <strong id="fahrenheitResult">—</strong>
+              <small>Fahrenheit</small>
+            </article>
+            <article class="result-card kelvin">
+              <div class="result-top"><span class="unit-symbol">K</span><span>Kelvin</span></div>
+              <strong id="kelvinResult">—</strong>
+              <small>Kelvin</small>
+            </article>
+          </div>
+        </div>
+
+        <div class="formula-note">
+          <div class="info-icon">i</div>
+          <div><strong>Quick reference</strong><p>C → F: (°C × 9/5) + 32 &nbsp; • &nbsp; F → C: (°F − 32) × 5/9 &nbsp; • &nbsp; K = °C + 273.15</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>Tempora · Vanilla JavaScript project</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
